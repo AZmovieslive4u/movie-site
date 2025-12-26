@@ -1,28 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Movie Info Hub</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Info Hub</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+header {
+  background: #020617;
+  padding: 15px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.movie {
+  background: #020617;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.movie img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.movie h2 {
+  margin: 10px 0 5px;
+}
+
+.movie p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.watch {
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  background: #2563eb;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+}
+</style>
 </head>
+
 <body>
 
-<h1>🎬 Movie & Web Series Hub</h1>
+<header>🎬 Movie & Web Series Hub</header>
 
-<div>
+<div class="movie">
+  <img src="https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg">
   <h2>Avengers: Endgame</h2>
-  <img src="https://image.tmdb.org/t/p/w300/or06FN3Dka5tukK1e9sl16pB3iy.jpg">
-  <p>Superheroes unite to reverse the damage caused by Thanos.</p>
+  <p>After Thanos wipes out half the universe, the Avengers assemble once more.</p>
+  <a class="watch" href="https://www.hotstar.com" target="_blank">
+    Watch on Official Platform
+  </a>
+</div>
 
-  <iframe width="300" height="200"
-    src="https://www.youtube.com/embed/TcMBFSGVi1c"
-    allowfullscreen>
-  </iframe>
-
-  <p>
-    <a href="https://www.hotstar.com" target="_blank">
-      Watch on Official Platform
-    </a>
-  </p>
+<div class="movie">
+  <img src="https://image.tmdb.org/t/p/w500/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg">
+  <h2>Wonder Woman</h2>
+  <p>Diana, princess of the Amazons, discovers her full powers.</p>
+  <a class="watch" href="https://www.primevideo.com" target="_blank">
+    Watch on Official Platform
+  </a>
 </div>
 
 </body>
